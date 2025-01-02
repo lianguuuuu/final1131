@@ -1,0 +1,18 @@
+[
+    {
+        "picture": "../picture/boy.png",
+        "username": "admin",
+        "password": "1234",
+        "mail": "1234@gmail.com",
+        "living": "桃園市中壢區中北路200號",
+        "phoneNumber": "0987654321"
+    },
+    {
+        "picture": "../picture/girl.png",
+        "username": "user1",
+        "password": "password",
+        "mail": "password@gmail.com",
+        "living": "桃園市中壢區遠東路135號",
+        "phoneNumber": "0912345678"
+    }
+]

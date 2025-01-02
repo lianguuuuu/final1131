@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>登入或註冊</title>
+  <link rel="stylesheet" href="../assets/css/login.css">
+  <script src="../assets/js/login.js" defer></script>
+</head>
+<body>
+  <!-- 錯誤訊息提示區 -->
+  <p id="error-message" style="display: none; color: red;"></p>
+
+  <!-- 主容器 -->
+  <div class="container">
+    <!-- 登入區域 -->
+    <div id="login-section" class="login-box slide-up">
+      <div  class="center">
+        <h2 class="login-title">
+          <span>已有帳號，去</span>登入
+        </h2>
+        <!-- 登入表單 -->
+        <form id="login-form">
+          <div  class="input-box">
+            <!-- 帳號輸入框 -->
+            <input  id="username" type="text" placeholder="帳號">
+            <!-- 密碼輸入框 -->
+            <input  id="password" type="password" placeholder="密碼">
+          </div>
+          <!-- 登入按鈕 -->
+          <button type="submit">登入</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- 註冊區域 -->
+    <div id="register-section" class="register-box">
+      <h2 class="register-title">
+        <span>沒有帳號，去</span>註冊
+      </h2>
+      <!-- 註冊表單 -->
+      <form id="register-form">
+        <div class="input-box">
+          <div>
+            <!-- 新帳號輸入框 -->
+            <input id="new-username" type="text" placeholder="帳號">
+            <!-- 新密碼輸入框 -->
+            <input type="password" placeholder="密碼">
+          </div>
+        </div>
+        <!-- 註冊按鈕 -->
+        <button type="submit">註冊</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

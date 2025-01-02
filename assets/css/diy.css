@@ -1,0 +1,338 @@
+/* 全局樣式，設定 box-sizing 和 margin */
+*{
+    box-sizing:border-box ;
+    margin: 0px auto;
+}
+/* 頁首樣式，背景顏色及內部排版 */
+header{
+    height: 2cm;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+
+}
+/* 標題文字樣式 */
+header h1{
+    font-family:"Playwrite AU VIC", serif;
+    text-align: center;
+    margin-top: 10px;
+}
+/* 左側按鈕容器樣式 */
+.button1{
+    padding-top: 15px;
+    margin-left: 30px;
+}
+/* 購物車和首頁圖標樣式 */
+.cart-icon0,.cart-icon{
+    width: 38px;
+    height: 38px;
+}
+/* 右側按鈕容器樣式 */
+.button2{
+    padding-top: 15px;
+    margin-right: 30px;
+}
+
+ /* 當鼠標懸停時圖標放大效果 */
+.button2 img:hover{
+    transform: scale(1.5);
+}
+
+.button1 img:hover{
+    transform: scale(1.5);
+}
+
+/* DIY 標題樣式 */
+.diyTitle{
+    text-align: center;
+    margin: 0.5cm;
+}
+/* DIY 表單外觀及間距 */
+#diyForm{
+    display: flex;
+    margin-top: 1cm;
+}
+/* 主圖片樣式 */
+.picture1{
+    width: 100%;
+    height: 300px; /* 固定高度 */
+    display: flex; /* 使用 Flexbox */
+    justify-content: center; /* 水平置中 */
+    object-fit: cover; /* 確保圖片內容裁切但不壓縮 */
+    overflow: hidden; /* 隱藏超出部分 */
+}
+/* 表單內的操作容器 */
+.action-container {
+    display: flex;
+    align-items: center; /* 垂直置中 */
+    flex-direction: column;
+    gap: 20px; /* 按鈕與數量欄的間距 */
+    margin-top: 20px;
+}
+
+/* 評分區塊的主要樣式 */
+.rating{
+    margin: 50px;
+    display: inline-flex;
+    flex-direction: row-reverse;
+}
+
+/* 隱藏 radio 按鈕 */
+.rating input {
+    display: none;
+}
+ 
+/* 預設顯示為空星 */
+/* cursor 鼠標懸停呈現的樣式 */
+.rating label {
+    font-size: 50px;
+    color: #000;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.rating input:checked{
+    color: #ffcc00;
+}
+
+ /* 已選中的星星顏色 */
+.rating input:checked + label,
+.rating input:checked + label ~ label {
+    color: #ffcc00;
+}
+  
+/*懸浮效果*/
+.rating label:hover,
+.rating label:hover ~ label {
+    color: #ffcc00;
+}
+
+/* 評分區塊的主要樣式 */
+.rating {
+    direction: rtl;
+    display: inline-block;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    color: gray;
+    font-size: 30px;
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+.rating input:checked ~ label {
+    color: gold;
+}
+
+#reviews {
+    margin-top: 20px;
+}
+
+.review {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.review img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 0px;
+}
+
+.review-content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.left-side{
+    font-weight:bold;
+}
+
+/* 數量調整按鈕樣式 */
+.quantity-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 5px;
+    width: fit-content;
+    margin-top: -20px;
+}
+/* 增減數量按鈕的外觀 */
+.quantity-button {
+    width: 30px;
+    height: 30px;
+    background-color: #ffcb85;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*懸停效果*/
+.quantity-button:hover{
+    background-color: #ffb12a;
+}
+/* 商品數量輸入框的樣式 */
+#product-quantity {
+    width: 50px;
+    text-align: center;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #f0f0f0;
+}
+
+.review-section {
+    display: flex;
+    justify-content: space-between; /* 子元素均分空間 */
+    align-items: flex-start; /* 水平對齊，頂部對齊 */
+    gap: 20px; /* 左右區塊間距 */
+    margin-top: 40px;
+    width: 70%;
+}
+
+.left-side {
+    flex: 1; /* 左側區塊占據剩餘空間 */
+    max-width: 50%; /* 設定最大寬度 */
+    font-weight: bold;
+    margin-left: -120px;
+}
+
+.right-side {
+    flex: 1; /* 右側區塊占據剩餘空間 */
+    max-width: 50%; /* 設定最大寬度 */
+    max-height: 400px; /* 設定最大高度 */
+    padding: 10px;
+    border-left: 2px solid #ccc; /* 左邊界線 */
+    margin-right: 50px;
+}
+
+.right-side h2 {
+    margin-left: 95px; /* 拉大與線之間的距離 */
+}
+
+textarea {
+    width: 100%; /* 輸入框寬度填滿父容器 */
+    box-sizing: border-box;
+}
+
+#reviews {
+    margin-top: 10px;
+    text-align: left;
+}
+
+.review {
+    display: flex;
+    align-items: left;
+    margin-bottom: 10px;
+}
+
+.review img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.review-content {
+    display: flex;
+    flex-direction: column;
+}
+/* 提交按鈕的樣式及動畫效果 */
+#Submit{
+    position: relative;
+    
+    min-width: 30px;
+    min-height: 50px;
+    display: inline-flex;
+  
+    font-size: 22px;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #66410a;
+    background: #f5e2b5;
+ 
+    border: none;
+    border-radius: 1000px;
+   
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+
+}
+
+#Submit::before {
+    content: '';
+      border-radius: 1000px;
+      min-width: calc(120px + 12px);
+      min-height: calc(35px + 12px);
+      border: 3px solid #ed9a2d;
+   
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: all .3s ease-in-out 0s;
+}
+/* 提交按鈕的懸停樣式與動畫 */ 
+#Submit:hover, 
+#Submit:focus {
+    color: #e45a15;
+    transform: translateY(-6px);
+}
+
+#Submit:hover::before, 
+#Submit:focus::before {
+    opacity: 1;
+}
+
+#Submit::after {
+    content: '';
+    width: 30px; height: 30px;
+    border-radius: 100%;
+    border: 6px solid rgb(246, 194, 98);
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
+}
+
+#Submit:hover::after, 
+#Submit:focus::after {
+    animation: none;
+    display: none;
+}
+
+@keyframes ring {
+    0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+    }
+    100% {
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+    }
+}

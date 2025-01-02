@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/*置中選單*/
+.choose {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    list-style: none;
+    background-color: #ffcb85;
+}
+
+.choose li{
+    min-width: 130px;/*變顏色的寬度*/
+    padding: 0;
+    padding: 12px 0;
+    transition: 0.3s;
+}
+.choose li:hover{
+    background-color: rgb(130, 67, 23);
+    color:#ffcb85;
+}
+
+.choose li a{
+    color: black;/*字的顏色*/
+    text-decoration: none;
+    letter-spacing: 3px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    font-size: 20px;
+}
+.choose li a:hover{
+    color:#ffcb85;
+}
+
+.choose li a span{
+    position: relative;
+    transition: 0.3s;
+}
+.choose li a span::before{
+    content: attr(data-text);/*顯示choose.js中letter存入的內容*/
+    position: absolute;
+    transform: translateY(130%);
+}
+.choose li a:hover span{
+    transform: translateY(-130%);
+}
+
+
+/*子選單*/
+#submenu {
+    display: none;
+    text-align: center;
+    background-color:white;
+}
+#submenu a {
+    display: inline-block;
+    margin: 5px 15px;
+    text-decoration: none;
+    color: black;
+}
+#submenu a:hover {
+    color:#ffb350;
+}
+/*顯示子選單的樣式*/
+#submenu.visible {
+    display: block;
+}

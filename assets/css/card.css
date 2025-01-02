@@ -1,0 +1,84 @@
+*{
+    box-sizing:border-box ;
+    margin: 0px auto;/*置中*/
+}
+
+.bg1{
+    background-image: url(../../picture/bg1.png) ;
+    background-size: cover;
+}
+section h2,
+section p{
+    font-family:"Playwrite AU VIC", serif;
+}
+main{
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* =grid-template-columns(3,1fr) */
+    grid-row-gap:1fr;
+}
+
+.img1{
+    position: absolute;
+    right: 0.8cm;
+    top: 30cm;
+    z-index: -2;
+}
+.img3{
+    position: absolute;
+    left: 1cm;
+    top: 45cm;
+    z-index:-2;
+}
+.img4{
+    position: absolute;
+    left: 0cm;
+    top: 79cm;
+    z-index:1;
+}
+.img6{
+    position: absolute;
+    right: -1.5cm;
+    top: 65cm;
+    z-index:-2;
+}
+
+.card_pic{
+    height: 110px;
+    width: 110px;
+    border-radius:20px;
+    margin-top:5px;
+    margin-bottom: 5px;
+}
+
+.card{
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 15px; /*框框有弧度*/
+    background-size: cover;/*背景圖根據區塊大小來調整大小*/
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+}
+.card:hover{
+    transform: scale(1.05);
+    color:rgb(235, 141, 0);
+    border-color:rgb(124, 74, 0);
+}
+
+aside {
+    grid-area: 12/1/13/4;
+    display: flex; 
+}
+aside .text-content {
+    display: flex;
+    flex-direction: column; /* 文字垂直排列 */
+}
+aside h2, aside p{
+    text-align: center;
+}
+aside .card_pic {
+    width: 150px; /* 調整圖片大小 */
+    margin-right: 50px;
+}

@@ -1,0 +1,211 @@
+/* 基本樣式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffcb85;
+    text-align: center;
+    display: flex;
+  
+    align-items: center;      /* 垂直置中 */
+    padding:  0;          /* 可以加上上下內邊距來調整間距 */
+}
+
+.cart-container {
+    padding: 20px;
+    background-color: white;
+}
+
+.cart-item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.total-price p{
+    font-size: 18px;
+    margin-top: 0px;
+}
+
+
+
+.item-image{
+    width:30%;
+    height:30%;
+    margin-right:2cm;
+    margin-left: 6cm;
+}
+
+.low{
+    text-align:center;
+    margin-bottom: 30px;
+    margin-top:0px;
+    background-color: #ffcb85;
+}
+
+.popup {
+    display: none; /* 確保初始狀態隱藏 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* 背景半透明 */
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* 彈窗內容 */
+.popup-content {
+    display: flex;
+    flex-direction: column; /* 垂直排列子元素 */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* 彈窗圖片樣式 */
+.popup-content img {
+    max-width: 100%;
+    width: 300px; /* 固定寬度 */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* 彈窗按鈕樣式 */
+.popup-content button {
+    padding: 10px 20px;
+    background-color: #ed9a2d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.popup-content button:hover {
+    background-color: #ffcb85;
+}
+
+
+
+.button1 img:hover{
+    transform: scale(1.5);
+}
+
+.button1{
+    
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 16cm;
+}
+
+.cart-icon0{
+
+    width: 38px;
+    height: 38px;
+    display: block;
+    margin: 0;
+    float: left;
+}
+header p{
+    display:none;
+}
+
+.title {
+    display: flex;
+    
+    align-items: center; /* 讓標題置中 */
+}
+
+h1 {
+    text-align: center; /* 讓標題置中 */
+    font-size: 32px; /* 調整字型大小 */
+
+    margin-right: 5cm;
+
+    color: #fff;
+  
+    text-transform: uppercase;
+    font-weight: bolder;
+    position: relative;
+}
+h1::before{
+    content: '購物車';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #7F5539;
+    width: 60px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 5px solid #7F5539;
+    animation: move 2s linear infinite;
+    filter: drop-shadow(0 0 50px #7F5539);
+}
+@keyframes move {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+
+
+
+
+.low button{
+    position: relative;
+    background-color: #f2a72f;
+    border: none;
+    width: 120px;
+    height: 50px;
+    margin: 20px ;
+    font-size: 18px;
+    color: #fff;
+    letter-spacing: 3px;
+    border-radius: 30px;
+    box-shadow: 3px 5px 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+    overflow: hidden;
+}
+.low button:hover{
+    box-shadow: 3px 5px 10px rgba(0,0,0,0.2);
+}
+.low button span{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+    animation: animate 1s ease;
+}
+
+@keyframes animate {
+    from{
+        width: 0;
+        height: 0;
+        opacity: 0.5;
+    }
+    to{
+        width: 400px;
+        height: 400px;
+        opacity: 0;
+    }
+}
+

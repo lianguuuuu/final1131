@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIY 商品</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+VIC:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/diy.css">
+</head>
+<body>
+    <header>
+        <!-- 返回首頁按鈕 -->
+        <div class="button1">
+            <a href="../index.html">
+                <img src="/picture/home.png" class="cart-icon0">
+            </a>
+        </div>
+        
+        <!-- 中央標題 -->
+        <h1>Qi Fan</h1>
+
+        <!-- 購物車按鈕 -->
+        <div class="button2">
+            <a href="cart.html">
+                <img src="/picture/cart.png" alt="購物車" class="cart-icon">
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- DIY 商品標題及圖片 -->
+        <h1 class="diyTitle">DIY 自選商品</h1>
+        <img src="/picture/diy_title.jpg" class="picture1">
+         <!-- DIY 商品選項表單 -->
+        <form id="diyForm">
+            <div class="optino1">
+                <h2>選擇主食</h2>
+                <div class="optino2">
+                    <label><input type="radio" name="main" value="地瓜" required> 地瓜</label><br>
+                    <label><input type="radio" name="main" value="白飯"> 白飯</label><br>
+                    <label><input type="radio" name="main" value="糙米飯"> 糙米飯</label><br>
+                    <label><input type="radio" name="main" value="紫米飯"> 紫米飯</label><br>
+                </div>
+            </div>
+
+            <!-- 肉品選項 -->
+            <div class="optino1">
+                <h2>選擇肉品</h2>
+                <div class="optino2">
+                    <label><input type="radio" name="meat" value="舒肥雞" required>舒肥雞</label><br>
+                    <label><input type="radio" name="meat" value="梅花豬">梅花豬</label><br>
+                    <label><input type="radio" name="meat" value="骰子牛">骰子牛</label><br>
+                </div>
+            </div>
+            
+            <!-- 配菜選項 -->
+            <div class="optino1">
+                <h2>選擇配菜 (可複選)</h2>
+                <div class="optino2">
+                    <label><input type="checkbox" name="side" value="花椰菜"> 花椰菜</label><br>
+                    <label><input type="checkbox" name="side" value="空心菜"> 空心菜</label><br>
+                    <label><input type="checkbox" name="side" value="高麗菜"> 高麗菜</label><br>
+                </div>
+            </div>
+            <!-- 數量與購物車按鈕 -->
+            <div class="action-container">
+                <div class="quantity-container">
+                    <button class="quantity-button" onclick="changeQuantity(-1)">-</button>
+                    <input id="product-quantity" type="text" value="1" readonly />
+                    <button class="quantity-button" onclick="changeQuantity(1)">+</button>
+                </div>
+                <button id="Submit" type="button" onclick="addToCart()">加入購物車</button>
+            </div>
+        </form>
+        
+        <!-- 評論區 -->
+        <div class="review-section">
+            <!-- 左側評論輸入 -->
+            <div class="left-side">
+                <h2>寫下您的評論</h2>
+                <div class="rating">
+                    <input type="radio" id="star1" name="rating" value="5">
+                    <label for="star1">&#9733;</label>
+        
+                    <input type="radio" id="star2" name="rating" value="4">
+                    <label for="star2">&#9733;</label>
+        
+                    <input type="radio" id="star3" name="rating" value="3">
+                    <label for="star3">&#9733;</label>
+        
+                    <input type="radio" id="star4" name="rating" value="2">
+                    <label for="star4">&#9733;</label>
+        
+                    <input type="radio" id="star5" name="rating" value="1">
+                    <label for="star5">&#9733;</label>
+                </div>
+        
+                <div>
+                    <textarea id="comment" placeholder="請輸入您的評論" rows="4" cols="50"></textarea>
+                </div>
+        
+                <button id="submitReview">送出評論</button>
+            </div>
+        
+            <!-- 右側顯示評論 -->
+            <div class="right-side">
+                <h2>顯示評論</h2>
+                <div id="reviews"></div>
+            </div>
+        </div>
+        
+        <script src="../assets/js/diy.js"></script>
+    </main>
+</body>
+</html>

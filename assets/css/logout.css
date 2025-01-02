@@ -1,0 +1,113 @@
+/* 全局設置，讓頁面內容居中 */
+body {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center; 
+  min-height: 100vh; 
+  margin: 0;
+  padding: 0 20px;
+  box-sizing: border-box;
+  background-color: #ffcb85; 
+  background-image:url(../../picture/bg4.png);
+
+}
+
+/* 標題與 user-info 的間距 */
+h1 {
+  margin-bottom: -20px; 
+}
+/* 設定 user-info 水平排列並背景寬度一致 */
+#user-info {
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  gap: 95px; 
+  margin: 10px 0;
+  width: 100%;
+  max-width: 1200px; 
+  min-height: 200px; 
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  box-sizing: border-box;
+}
+
+/* 設定圖片大小 */
+#picture {
+  width: 150px;
+  height: 150px;
+  object-fit: cover; 
+  border-radius: 50%; 
+  border: 5px solid #ffb12a; 
+}
+
+/* 讓文字部分的父容器垂直排列 */
+#user-info div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; 
+}
+
+/* 設定購物車與評論的父容器 */
+#cart-reviews-container {
+  display: flex;
+  justify-content: center; 
+  align-items: flex-start; 
+  gap: 20px; 
+  width: 100%; 
+  max-width: 1200px; 
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+
+/* 設定購物車與評論區域 */
+#cart-container,
+#reviews-container {
+  flex: 1;
+  background-color: #f9f9f9; 
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  max-width: 48%; 
+  
+}
+
+/* 特殊背景顏色設置 */
+#reviews-container {
+  background-color: #f2f2f2; 
+}
+
+/* 設定按鈕容器樣式 */
+#button-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  gap: 20px; 
+  margin: 20px 0; 
+}
+
+/* 設定按鈕樣式 */
+button {
+  padding: 10px 20px; 
+  font-size: 16px; 
+  border: 1px solid #ccc;
+  border-radius: 5px; 
+  background-color: #ff7b00; 
+  color: black; 
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  height: 45px; 
+}
+
+/* 按鈕懸停效果 */
+button:hover {
+  background-color: #c29965;
+  color: white;
+}

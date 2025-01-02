@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.title {
+    position: relative; 
+    padding: 20px; 
+    text-align: center; 
+    background-color: #ffcb85;/*title背景顏色*/
+    display: flex;
+}
+.title h1{
+    font-family: "Playwrite AU VIC", serif;
+    font-size: 50px;
+    letter-spacing:1px;
+    background: linear-gradient(0deg, #ff7b00 50%, rgb(103, 61, 5) 50%);
+    color:transparent;
+    -webkit-background-clip: text;/*背景裁剪到文字內部*/
+}
+
+/*設定會員圖片位置*/
+#nav-button1{
+    position: absolute; 
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+}
+
+/*設定購物車位置*/
+.nav-button2 {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+/*設定購物車圖片大小*/
+.cart-icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer; /*滑鼠移上顯示可以點擊*/
+}
+/*設定會員圖片大小*/
+.member_icon{
+    width: 40px;
+    height: 40px;
+    cursor: pointer; /*滑鼠移上顯示為可以點擊*/
+}
+
+/*滑鼠在圖片上時，圖片放大*/
+.member_icon:hover{
+    transform: scale(1.5);
+}
+.cart-icon:hover{
+    transform: scale(1.5);
+}

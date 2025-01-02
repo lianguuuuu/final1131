@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>電商平台範例</title>
+    <link rel="stylesheet" href="/assets/css/user.css">
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav-header">
+        <input type="checkbox" id="hamburgerButton" title="打開菜單">
+        <label for="hamburgerButton" class="toggle">
+          <div class="bars" id="bar1"></div>
+          <div class="bars" id="bar2"></div>
+          <div class="bars" id="bar3"></div>
+        </label>
+      </div>
+      <div class="nav-menu">
+        <ul>
+          <li><a id="home">首頁</a></li>
+        </ul>
+        <div class="nav-buttons">
+          <button type="button" id="cartbutton">
+            <img src="/picture/home.png" alt="購物車">
+            <a>購物車</a>
+          </button>
+          <button type="button" id="memberButton">
+            <img src="/picture/home.png" alt="會員">
+            <a>會員</a>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <button type="button" id="logoutButton" class="button">登出</button>
+    </div>
+
+    <script type="module" src="/assets/js/navbar.js"></script>
+    <script type="module" src="/assets/js/users.js"></script>
+  </body>
+
+</html>

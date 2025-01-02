@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>購物車</title>
+    <link rel="stylesheet" href="../assets/css/cart.css">
+</head>
+<body>
+    <header>
+        <div class="title">
+           
+            <div class="button1">
+                <a href="../index.html">
+                    <img src="../picture/home.png" alt="首頁" class="cart-icon0">
+                </a>
+            </div>
+            <h1>購物車</h1>
+        </div>
+        <p><span id="current-user">未登入</span></p>
+    </header>
+
+    <main>
+        <div class="cart-container" id="cart-container">
+            <!-- 這裡將動態顯示購物車內容 -->
+        </div>
+
+        <div class="low">
+            <div class="total-price">
+                <p>總價: <span id="total-price">$0</span></p>
+            </div>
+            <select id="payment">
+                <option value="card">信用卡</option>
+                <option value="cash">現金</option>
+            </select>
+           
+            <!-- 外送選項 -->
+            <select id="pickup" onchange="showDeliveryInfo()">
+                <option value="pickup">自取</option>
+                <option value="delivery">外送</option>
+            </select>
+
+            <!-- 顯示外送地址欄 -->
+            <div id="delivery-info" class="hidden">
+                <label for="delivery-address">外送地址：</label>
+                <input type="text" id="delivery-address" placeholder="請輸入外送地址" />
+            </div>
+
+            <input type="text" id="address" placeholder="輸入地址" class="hidden">
+            
+            <button onclick="clearCart()">清空購物車</button>
+            <button id="checkout-button">結帳</button>
+        </div>
+
+        <div id="success-popup" class="popup">
+            <div class="popup-content">
+                <img src="../picture/photo-output.png" alt="付款成功" >
+                <button id="return-home">返回主頁</button>
+            </div>
+        </div>    
+   
+    </main>
+
+    <script src="../assets/js/cart.js"></script>
+</body>
+</html>

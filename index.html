@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+VIC:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/title.css">
+    <link rel="stylesheet" href="assets/css/card.css">
+    <link rel="stylesheet" href="assets/css/choose.css">   
+    <link rel="stylesheet" href="assets/css/footer.css">   
+</head>
+<body>
+    <header>
+        <div class="title">
+            <a href="./pages/login.html" id="nav-button1">
+                <img src="picture/member_icon.png" alt="會員" class="member_icon">
+            </a>
+            
+            <h1>Qi Fan&nbsp;&nbsp;啟帆</h1>
+
+            <div class="nav-button2">  
+                <a href="pages/cart.html">
+                    <img src="picture/cart.png" alt="購物車" class="cart-icon">
+                </a>
+            </div>
+        </div>
+
+        <iframe src="pages/swiper.html" width="100%" height="500px" style="border: none;"></iframe>
+       
+        <nav>
+            <ul class="choose">
+                <li><a href="#" id="menu-toggle">套餐</a></li>
+                <li><a href="#individually">單點</a></li>
+                <li><a href="#staple_food">主食</a></li>
+                <li><a href="#diy">DIY</a></li>
+            </ul>
+            <div id="submenu">
+                <a href="#chicken">雞</a>
+                <a href="#pork">豬</a>
+                <a href="#beef">牛</a>
+                <a href="#seafood">海鮮</a>
+            </div>
+        </nav> 
+    </header>
+    <img class="img1" src="picture/carrot.png" width="250px" height="250px">
+    <img class="img3" src="picture/fork.png" width="350px" height="350px">
+    <img class="img4" src="picture/people2.png" width="350px" height="350px">
+    <img class="img6" src="picture/lu_.png" width="350px" height="350px">
+    <div class="bg1">
+        <main>
+
+            <!--雞肉1-->
+            <section class="card" id="chicken" data-product-id="chicken1"
+            onclick="handleCardClick(this)">
+                <h2>田園香煎雞胸</h2>
+                <img class="card_pic" src="picture/chicken_1.jpg"/>
+                <p>價錢：$110</p>
+            </section>
+            <!--雞肉2-->
+            <section class="card" data-product-id="chicken2"
+            onclick="handleCardClick(this)">
+                <h2>黑胡椒雞胸</h2>
+                <img class="card_pic" src="picture/chicken_2.jpg"/>
+                <p>價錢：$110</p>
+            </section>
+            <!--雞肉3-->
+            <section class="card" data-product-id="chicken3"
+            onclick="handleCardClick(this)">
+                <h2>蒜香雞胸</h2>
+                <img class="card_pic" src="picture/chicken_3.jpg"/>
+                <p>價錢：$120</p>
+            </section>
+            <!--雞肉4-->
+            <section class="card" data-product-id="chicken4"
+            onclick="handleCardClick(this)">
+                <h2>照燒香鬆雞腿</h2>
+                <img class="card_pic" src="picture/chicken_4.jpg"/>
+                <p>價錢：$125</p>
+            </section>
+            <!--雞肉5-->
+            <section class="card" data-product-id="chicken5"
+            onclick="handleCardClick(this)">
+                <h2>醬燒雞腿</h2>
+                <img class="card_pic" src="picture/chicken_5.jpg"/>
+                <p>價錢：$125</p>
+            </section>
+            <!--雞肉6-->
+            <section class="card" data-product-id="chicken6"
+            onclick="handleCardClick(this)">
+                <h2>奧爾良雞胸</h2>
+                <img class="card_pic" src="picture/chicken_6.jpg"/>
+                <p>價錢：$135</p>
+            </section>
+            <!--豬肉1-->
+            <section class="card" id="pork" data-product-id="pork1"
+            onclick="handleCardClick(this)">
+                <h2>黑胡椒豬肉</h2>
+                <img class="card_pic" src="picture/pork_1.jpg" />
+                <p>價錢：$120</p>
+            </section>
+            <!--豬肉2-->
+            <section class="card" data-product-id="pork2"
+            onclick="handleCardClick(this)">
+                <h2>泰式打拋豬</h2>
+                <img class="card_pic" src="picture/pork_2.jpg" />
+                <p>價錢：$140</p>
+            </section>
+            <!--豬肉3-->
+            <section class="card" data-product-id="pork3"
+            onclick="handleCardClick(this)">
+                <h2>日式醬燒豬肉</h2>
+                <img class="card_pic" src="picture/pork_3.jpg" />
+                <p>價錢：$140</p>
+            </section>
+           <!--牛肉1-->
+            <section class="card" id="beef" data-product-id="beef1"
+            onclick="handleCardClick(this)">
+                <h2>日式咖哩燉牛肉</h2>
+                <img class="card_pic" src="picture/beef_1.jpg" />
+                <p>價錢：$150</p>
+            </section>
+            <!--牛肉2-->
+            <section class="card" data-product-id="beef2"
+            onclick="handleCardClick(this)">
+                <h2>香煎菲力牛排</h2>
+                <img class="card_pic" src="picture/beef_2.jpg" />
+                <p>價錢：$160</p>
+            </section>
+            <!--牛肉3-->
+            <section class="card" data-product-id="beef3"
+            onclick="handleCardClick(this)">
+                <h2>紅酒燉牛肉</h2>
+                <img class="card_pic" src="picture/beef_3.jpg" />
+                <p>價錢：$150</p>
+            </section>
+           <!--海鮮1-->
+            <section class="card" id="seafood" data-product-id="seafood1"
+            onclick="handleCardClick(this)">
+                <h2>香蒜蝦仁</h2>
+                <img class="card_pic" src="picture/seafood_1.jpg" />
+                <p>價錢：$160</p>
+            </section>
+            <!--海鮮2-->
+            <section class="card" data-product-id="seafood2"
+            onclick="handleCardClick(this)">
+                <h2>蒲燒鰻魚</h2>
+                <img class="card_pic" src="picture/seafood_2.jpg" />
+                <p>價錢：$170</p>
+            </section>
+            <!--海鮮3-->
+            <section class="card" data-product-id="seafood3"
+            onclick="handleCardClick(this)">
+                <h2>胡椒蝦</h2>
+                <img class="card_pic" src="picture/seafood_3.jpg" />
+                <p>價錢：$160</p>
+            </section>
+            <!--單點-->
+            <section class="card" id="individually" data-product-id="gi1"
+            onclick="handleCardClick(this)">
+                <h2>紹興雞腿</h2>
+                <img class="card_pic" src="picture/gi_1.jpg" />
+                <p>價錢：$120</p>
+            </section>
+            <section class="card" data-product-id="gi2"
+            onclick="handleCardClick(this)">
+                <h2>韓式辣炒雞</h2>
+                <img class="card_pic" src="picture/gi_2.jpg" />
+                <p>價錢：$120</p>
+            </section>
+            <section class="card" data-product-id="gi3"
+            onclick="handleCardClick(this)">
+                <h2>嫩煎雞胸</h2>
+                <img class="card_pic" src="picture/gi_3.jpg" />
+                <p>價錢：$90</p>
+            </section>
+            <section class="card" data-product-id="pig1"
+            onclick="handleCardClick(this)">
+                <h2>麻油松阪豬</h2>
+                <img class="card_pic" src="picture/pig_1.jpg" />
+                <p>價錢：$100</p>
+            </section>
+            <section class="card" data-product-id="pig2"
+            onclick="handleCardClick(this)">
+                <h2>日式胡麻味噌豬</h2>
+                <img class="card_pic" src="picture/pig_2.jpg" />
+                <p>價錢：$100</p>
+            </section>
+            <section class="card" data-product-id="pig3"
+            onclick="handleCardClick(this)">
+                <h2>黑胡椒洋蔥豬</h2>
+                <img class="card_pic" src="picture/pig_3.jpg" />
+                <p>價錢：$100</p>
+            </section>
+            <section class="card" data-product-id="cow1"
+            onclick="handleCardClick(this)">
+                <h2>紅燒牛腩</h2>
+                <img class="card_pic" src="picture/cow_1.jpg" />
+                <p>價錢：$150</p>
+            </section>
+            <section class="card" data-product-id="cow2"
+            onclick="handleCardClick(this)">
+                <h2>泰式涼拌牛肉片</h2>
+                <img class="card_pic" src="picture/cow_2.jpg" />
+                <p>價錢：$150</p>
+            </section>
+            <section class="card" data-product-id="cow3"
+            onclick="handleCardClick(this)">
+                <h2>黑胡椒牛肉片</h2>
+                <img class="card_pic" src="picture/cow_3.jpg" />
+                <p>價錢：$120</p>
+            </section>
+            
+            <aside class="card" id="diy" data-product-id="DIY" onclick="handleCardClick(this)">
+                <img class="card_pic" src="picture/yummy.png"> 
+                <div class="text-content">
+                    <br><h2>DIY</h2>
+                    <p>可自選主食與配菜，達到一天的營養</p>
+                </div>
+                <img class="card_pic" src="picture/yummy.png"> 
+            </aside>
+            
+            <!--單點主食-->
+            <section class="card" id="staple_food" data-product-id="sweatpotato"
+            onclick="handleCardClick(this)">
+                <h2>地瓜</h2>
+                <img class="card_pic" src="picture/sweat_potato.jpg" />
+                <p>價錢：$30</p>
+            </section>
+            <section class="card" data-product-id="rice"
+            onclick="handleCardClick(this)">
+                <h2>糙米飯</h2>
+                <img class="card_pic" src="picture/rice.jpg" />
+                <p>價錢：$30</p>
+            </section>
+            <section class="card" data-product-id="purplerice"
+            onclick="handleCardClick(this)">
+                <h2>紫米飯</h2>
+                <img class="card_pic" src="picture/purple_rice.jpg" />
+                <p>價錢：$30</p>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <div class="about-section">
+            <h3>關於我們</h3>
+            <p>我們致力於提供新鮮、健康的餐點，讓您的每一天更美好。</p>
+        </div>
+        <div class="contact-section">
+            <h3>聯繫我們</h3>
+            <div class="contact-section1">
+                <p><span class="color">電話：</span>123-456-7890<p>
+                <p><span class="color">Email：</span>qifan@healthydining.com</p>
+                <p><span class="color">地址：</span>桃園市健康路123號</p>
+            </div>
+        </div>
+        <div class="social-media">
+            <a href="https://www.cycu.edu.tw/"><img src="picture/facebook.png" alt="Facebook"></a>
+            <a href="https://www.cycu.edu.tw/"><img src="picture/instagram.jpg" alt="Instagram"></a>
+        </div>
+    </footer>
+    
+    <script src="index.js"></script>
+    <script src="assets/js/choose.js" defer></script>  
+    <script src="assets/js/changePage.js" ></script> 
+</body>
+</html>

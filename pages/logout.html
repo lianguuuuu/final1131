@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>會員資訊</title>
+  <link rel="stylesheet" href="../assets/css/logout.css">
+</head>
+<body>
+  <!-- 主標題，顯示 "會員資訊" -->
+  <h1 data-text="會員資訊">
+    會員資訊
+    <!-- 視覺效果：背景及光效元素 -->
+    <span class="back"></span>
+    <span class="shine"></span>
+  </h1>
+
+  <!-- 顯示目前使用者名稱的段落 -->
+  <p><span id="current-user"></span></p>
+
+  <!-- 用於展示使用者詳細資訊的容器 -->
+  <div id="user-info">
+    <!-- 使用者頭像 -->
+    <img id="picture" alt="User Picture" />
+    <!-- 包含使用者資訊的文字區域 -->
+    <div>
+      <p id="username">使用者名稱</p> <!-- 使用者名稱 -->
+      <p id="email"></p><!-- 使用者電子郵件 -->
+      <p id="living"></p><!-- 使用者居住地 -->
+      <p id="phone"></p><!-- 使用者電話號碼 -->
+      <p id="history"></p><!-- 使用者消費歷史 -->
+    </div>
+  </div>
+
+  <!-- 包含購物車資訊及評論的容器 -->
+  <div id="cart-reviews-container">
+    <!-- 最新消費資訊區塊 -->
+    <div id="cart-container">最新消費資訊</div>
+    <!-- 評論內容區塊 -->
+    <div id="reviews-container">評論內容</div>
+  </div>
+
+  <!-- 包含首頁及登出按鈕的容器 -->
+  <div id="button-container">
+    <!-- 返回首頁的按鈕，點擊後跳轉到首頁 -->
+    <button id="homeButton" onclick="window.location.href='../index.html';">首頁</button>
+    <!-- 登出按鈕 -->
+    <button id="logoutButton">登出</button>
+  </div>
+
+  <!-- 外部 JavaScript 檔案，用於處理登出功能 -->
+  <script src="../assets/js/logout.js"></script>
+
+</body>
+</html>
