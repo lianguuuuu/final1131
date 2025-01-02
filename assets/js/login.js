@@ -35,7 +35,7 @@ function handleLoginSuccess(username) {
   }
   // 提示登入成功並導向首頁
   alert('登入成功');
-  window.location.href = '/index.html';
+  window.location.href = 'final1131/index.html';
 }
 
 // 顯示錯誤訊息的函數
