@@ -40,7 +40,7 @@ fetch('../assets/json/users.json')
                     cartContainer.appendChild(cartItem);
                 });
             } else {
-                cartContainer.innerHTML = '<p>購物車是空的</p>';
+                cartContainer.innerHTML = '<p>購物紀錄是空的</p>';
             }
 
             // 顯示評論
