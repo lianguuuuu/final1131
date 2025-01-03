@@ -2,7 +2,7 @@ window.onload = function () {
     const username = localStorage.getItem('username');
     if (!username) {
         alert('請先登入會員');
-        window.location.href = '../pages/login.html'; // 跳轉到登入頁
+        window.location.href = '/final1131/pages/login.html'; // 跳轉到登入頁
         return;
     }
 
@@ -40,7 +40,7 @@ window.onload = function () {
     // 綁定登出按鈕
     document.getElementById('logoutButton')?.addEventListener('click', () => {
         localStorage.removeItem('username'); // 清除登入用戶
-        window.location.href = '../pages/login.html'; // 跳轉到登入頁
+        window.location.href = '/final1131/pages/login.html'; // 跳轉到登入頁
     });
 };
 
@@ -123,7 +123,7 @@ function clearCart() {
         updateTotal();  // 更新總價為 0
     } else {
         alert('請先登入會員');
-        window.location.href = '../pages/login.html';  // 若未登入則跳轉到登入頁
+        window.location.href = '/final1131/pages/login.html';  // 若未登入則跳轉到登入頁
     }
 }
 
