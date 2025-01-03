@@ -5,11 +5,11 @@ function setButtonRedirect() {
   
     if (username) {
       // 已登入
-      button.href = './pages/logout.html'; // 設定為會員專區
+      button.href = '/final1131/pages/logout.html'; // 設定為會員專區
       button.innerHTML = '<img src="picture/member_login.png" alt="會員專區" style="width: 35px; height: 35px;">'; // 按鈕內容設置為圖片
     } else {
       // 未登入
-      button.href = './pages/login.html'; // 設定為登入頁
+      button.href = '/final1131/pages/login.html'; // 設定為登入頁
       button.textContent = '登入'; // 按鈕文字
     }
 }
