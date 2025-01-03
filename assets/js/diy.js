@@ -2,7 +2,7 @@ function addToCart() {
     const username = localStorage.getItem('username'); // 獲取當前用戶名稱
     if (!username) {
         alert('請先登入會員');
-        window.location.href = '../pages/login.html';
+        window.location.href = '/final1131/pages/login.html';
         return;
     }
 
@@ -27,7 +27,7 @@ function addToCart() {
     const diyItem = {
         name: `DIY (${main}, ${meat}, ${sides.join(', ')})`,
         price: 150, // 假設固定價格
-        picture: '../picture/yummy.png', // 商品圖片
+        picture: '/final1131/picture/yummy.png', // 商品圖片
         id: "DIY", // 固定商品 ID
         quantity: quantity, // 動態數量
     };
@@ -74,7 +74,7 @@ document.getElementById("submitReview").addEventListener("click", function () {
     const username = localStorage.getItem("username");
     if (!username) {
         alert("請先登入會員");
-        window.location.href = '../pages/login.html';
+        window.location.href = '/final1131/pages/login.html';
         return;
     }
 
@@ -177,7 +177,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const username = localStorage.getItem("username");
     if (!username) {
         alert("請先登入會員");
-        window.location.href = "../pages/login.html";
+        window.location.href = "/final1131/pages/login.html";
         return;
     }
 
@@ -278,7 +278,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const username = localStorage.getItem("username");
     if (!username) {
         alert("請先登入會員");
-        window.location.href = "../pages/login.html"; // 跳轉至登入頁面
+        window.location.href = "/final1131/pages/login.html"; // 跳轉至登入頁面
         return;
     }
 
