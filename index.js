@@ -7,6 +7,6 @@ function handleCardClick(element) {
       window.location.href = `/pages/diy_page.html`;
   } else{
       // 跳轉到其他商品頁面
-      window.location.href = `/pages/product_page.html?productId=${productId}`;
+      window.location.href = 'product_page.html?productId=' + productId;
   } 
 }
