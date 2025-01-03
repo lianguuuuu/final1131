@@ -67,10 +67,10 @@
             <!-- 數量與購物車按鈕 -->
             <div class="action-container">
                 <div class="quantity-container">
-                    <button class="quantity-button" onclick="changeQuantity(-1)">-</button>
+                    <button class="quantity-button" onclick="changeQuantity(-1, event)">-</button>
                     <input id="product-quantity" type="text" value="1" readonly />
-                    <button class="quantity-button" onclick="changeQuantity(1)">+</button>
-                </div>
+                    <button class="quantity-button" onclick="changeQuantity(1, event)">+</button>
+                </div>                
                 <button id="Submit" type="button" onclick="addToCart()">加入購物車</button>
             </div>
         </form>
