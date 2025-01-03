@@ -35,6 +35,13 @@
     transform: translateY(-50%);
 }
 
+.nav-button3{
+    position: absolute;
+    top: 50%;
+    right: 75px;
+    transform: translateY(-50%);
+}
+
 /*設定購物車圖片大小*/
 .cart-icon {
     width: 40px;
@@ -54,4 +61,9 @@
 }
 .cart-icon:hover{
     transform: scale(1.5);
+}
+.about-icon{
+    width: 40px;
+    height: 40px;
+    cursor: pointer; /*滑鼠移上顯示為可以點擊*/
 }
