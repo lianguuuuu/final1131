@@ -2,7 +2,7 @@ function addToCart() {
     const username = localStorage.getItem('username'); // 獲取當前用戶名稱
     if (!username) {
         alert('請先登入會員');
-        window.location.href = '/final/pages/login.html';
+        window.location.href = '/final1131/pages/login.html';
         return;
     }
 
@@ -104,7 +104,7 @@ document.getElementById("submitReview").addEventListener("click", function () {
     const username = localStorage.getItem("username");
     if (!username) {
         alert("請先登入會員");
-        window.location.href = '/final/pages/login.html';
+        window.location.href = '/final1131/pages/login.html';
         return;
     }
 
