@@ -34,7 +34,7 @@ window.onload = function () {
     document.getElementById('return-home').addEventListener('click', function () {
         const popup = document.getElementById('success-popup');
         popup.style.display = 'none'; // 隱藏彈窗
-        window.location.href = '/index.html'; // 跳轉到主頁
+        window.location.href = '/final1131/index.html'; // 跳轉到主頁
     });
 
     // 綁定登出按鈕
