@@ -1,6 +1,6 @@
 // 載入 JSON 資料並顯示商品詳情
 function loadProductData(productId) {
-    fetch('../assets/json/products.json')  // 使用相對路徑從父層資料夾載入 products.json
+    fetch('/assets/json/products.json')  // 使用相對路徑從父層資料夾載入 products.json
         .then(response => response.json())
         .then(data => {
             const product = data.find(p => p.id === productId);
