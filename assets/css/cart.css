@@ -209,3 +209,15 @@ h1::before{
     }
 }
 
+/* 隱藏數量框的上下箭頭 */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* 對 Firefox 也隱藏數量框的上下箭頭 */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
