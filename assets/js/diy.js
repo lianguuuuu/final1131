@@ -27,7 +27,7 @@ function addToCart() {
     const diyItem = {
         name: `DIY (${main}, ${meat}, ${sides.join(', ')})`, // 注意這裡也是使用 backticks
         price: 150, // 假設固定價格
-        picture: '/final/picture/yummy.png', // 商品圖片
+        picture: '/final1131/picture/yummy.png', // 商品圖片
         id: "DIY", // 固定商品 ID
         quantity: quantity, // 動態數量
     };
