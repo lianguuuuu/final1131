@@ -33,7 +33,7 @@ function addToCart() {
     const username = localStorage.getItem('username'); // 確認用戶已登入
     if (!username) {
         alert('請先登入');
-        window.location.href = '../pages/login.html';
+        window.location.href = '/final1131/pages/login.html';
         return;
     }
 
@@ -44,7 +44,7 @@ function addToCart() {
     const quantity = parseInt(document.getElementById('product-quantity').value, 10); // 取得用戶選擇的數量
 
     if (productId) {
-        fetch('../assets/json/products.json')
+        fetch('/final1131/assets/json/products.json')
             .then(response => response.json())
             .then(data => {
                 const product = data.find(p => p.id === productId);
@@ -163,7 +163,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const username = localStorage.getItem("username");
     if (!username) {
         alert("請先登入會員");
-        window.location.href = "../pages/login.html"; // 跳轉至登入頁面
+        window.location.href = "/final1131/pages/login.html"; // 跳轉至登入頁面
         return;
     }
 
