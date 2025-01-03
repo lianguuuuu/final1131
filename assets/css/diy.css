@@ -6,7 +6,7 @@
 /* 頁首樣式，背景顏色及內部排版 */
 header{
     height: 2cm;
-    background-color: #ffcb85;
+    background-color: antiquewhite;
     display: flex;
     justify-content: space-between;
 
