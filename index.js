@@ -4,10 +4,10 @@ function handleCardClick(element) {
 
   if (productId === "DIY") {
       // 跳轉到 diy.html
-      window.location.href = './pages/diy_page.html';  // 使路徑相對
-  } else {
+      window.location.href = `pages/diy_page.html`;
+  } else{
       // 跳轉到其他商品頁面
-      window.location.href = './pages/product_page.html?productId=' + productId;  // 調整路徑
-  }
+      window.location.href = `/pages/product_page.html?productId=${productId}`;
+  } 
 }
 
