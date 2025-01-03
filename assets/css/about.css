@@ -9,7 +9,7 @@ main {
     flex-direction: column; /* 使 Header、內容依次排列 */
     justify-content: flex-start; /* 從上開始排列 */
     align-items: center;
-    background-image: url(/picture/bg3.png);
+    background-image: url(/final1131/picture/bg3.png);
     background-size: cover;
 }
 header {  
