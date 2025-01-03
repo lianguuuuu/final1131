@@ -4,7 +4,7 @@ const username = localStorage.getItem('username'); // 取得當前用戶名稱
 
 if (!username) {
     alert('請先登入會員');
-    window.location.href = '../pages/login.html'; // 如果未登入，跳轉至登入頁面
+    window.location.href = '/final1131/pages/login.html'; // 如果未登入，跳轉至登入頁面
     return;
 }
 
@@ -12,7 +12,7 @@ const cartKey = `cart_${username}`;  // 例如 'cart_admin' 或 'cart_user1'
 const newCartKey = `new_cart_${username}`;  // 動態設置新的購物車名
 
 // 讀取對應的會員資料
-fetch('../assets/json/users.json')
+fetch('/final1131/assets/json/users.json')
     .then(response => response.json())
     .then(users => {
         const user = users.find(u => u.username === username);
@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (!username) {
         alert('請先登入會員');
-        window.location.href = '../pages/login.html'; // 如果未登入，跳轉至登入頁面
+        window.location.href = '/final1131/pages/login.html'; // 如果未登入，跳轉至登入頁面
         return;
     }
 
@@ -131,5 +131,5 @@ document.getElementById('logoutButton')?.addEventListener('click', function () {
   function handleLogout() {
     localStorage.removeItem('username'); // 清除登入資訊
     alert('您已成功登出');
-    window.location.href = '../pages/login.html';
+    window.location.href = '/final1131/pages/login.html';
   }
