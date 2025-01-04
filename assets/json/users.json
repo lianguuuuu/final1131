@@ -1,6 +1,6 @@
 [
     {
-        "picture": "../picture/boy.png",
+        "picture": "/final1131/picture/boy.png",
         "username": "admin",
         "password": "1234",
         "mail": "1234@gmail.com",
@@ -8,7 +8,7 @@
         "phoneNumber": "0987654321"
     },
     {
-        "picture": "../picture/girl.png",
+        "picture": "/final1131/picture/girl.png",
         "username": "user1",
         "password": "password",
         "mail": "password@gmail.com",
